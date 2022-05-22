@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>用户管理系统---登录</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="css/login.css">
+  
+  
+</head>
+<body>
+<form action="login.php" method="post">
+
+<div class ="container">
+	<div class="tit">LOGIN</div>
+	<input type="text" name="Id" title='最多11位' placeholder="账号">
+	<input type="password" name="Passwd" title='最多16位' placeholder="密码">
+	<select name="usertype" >
+		<option value="普通用户">普通用户</option>
+		<option value="管理员">管理员</option>
+	</select>
+	<button type="submit">登录</button>
+	<span>没有账号？<a href="register.html">去注册</a></span>
+</div>
+<!--下方都是用于美化 -->
+<div class="square">
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		
+	</ul>
+	
+</div>
+<div class="circle">
+	<ul>
+		
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	
+</div>
+
+</form>
+</body>
+</html>

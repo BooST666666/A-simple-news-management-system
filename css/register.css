@@ -1,0 +1,171 @@
+*{
+	/* 初始化 */
+	margin: 0;
+	padding: 0;	
+}
+body{
+	/* 100%窗口高度 */
+	height: 100vh;
+	/* 弹性布局 居中 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 渐变背景 */
+	background: linear-gradient(200deg,#ffdd94,#fa897b);
+	/* 溢出隐藏 */
+	overflow: hidden;
+}
+.container{
+	/* 相对位置 */
+	position: relative;
+	z-index: auto;
+	background-color: #fff;
+	border-radius: 15px;
+	/* 弹性布局 垂直分布 */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 350px;
+	height:550px;
+	/* 阴影 */
+	box-shadow: 0 5px 20px raba(0,0,0,0,0.1);
+}
+.container .tit{
+	font-size: 36px;
+	margin: 35px auto 55px auto;
+}
+.container input{ 
+	width: 280px;
+	height: 30px;
+	/* 文本框字体在框中的位置 */
+	text-indent: 8px;
+	/* 表示文本框无边框*/
+	border: none;
+	/* 美好文本框，相当于下划线 */
+	border-bottom: 1px solid #ddd;
+	/* outline （轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用 */
+	outline: none;
+	/* 文本框之间的间隔 */
+	margin: 12px auto;
+}
+.container button{
+	width: 280px;
+	height: 40px;
+	margin: 35px auto 40px auto;
+	border: none;
+	background: linear-gradient(-200deg,#ffdd94,#fa897b);
+	/* 字体 */
+	color: #fff;
+	/* 字体加粗 */
+	font-size: bold;
+	/* 字符间距 */
+	letter-spacing: 8px;
+	/* 弧形按钮 */
+	border-radius: 10px;
+	/* 移动到按钮,设定鼠标的形状为一只伸出食指的手 */
+	cursor: pointer;
+	/* 动画过渡 */
+	transform: 0.5s;
+}
+.container button:hover{
+	background: linear-gradient(-200deg,#fa897b,#ffdd94);
+	background-position-x: -280px;
+}
+.container a{
+	color: #fa897b;
+	
+	/* 取消跳转链接的下划线 */
+	text-decoration: none;
+	
+}
+ul li{
+	position: absolute;
+	border: 1px solid #fff;
+	background-color: #fff;
+	width: 30px;
+	height: 30px;
+	list-style: none;
+	opacity: 0;
+}
+.square li{
+	top:30vh;
+	left: 80vw;
+	/* 执行动画：动画名 时长  线性   无线循环 */
+	animation: square 10s linear infinite;
+}
+.square li:nth-child(2){
+	top:60vh;
+	left:10vw;
+	/* 动作延迟 */
+	animation-delay: 2s;
+}
+.square li:nth-child(3){
+	top:80vh;
+	left:85vw;
+	/* 动作延迟 */
+	animation-delay: 4s;
+}
+.square li:nth-child(4){
+	top:10vh;
+	left:70vw;/* 动作延迟 */
+	animation-delay: 1s;
+}
+.square li:nth-child(5){
+	top:10vh;
+	left:10vw;
+	/* 动作延迟 */
+	animation-delay: 6s;
+}
+
+.circle li{
+	bottom: 0;
+	left: 15vw;
+	animation: circle 10s linear infinite;
+}
+.circle li:nth-child(2){
+	left: 35vw;
+	animation-delay: 2s;
+	
+}
+.circle li:nth-child(3){
+	left:55vw;
+	animation-delay: 4s;
+	
+}.circle li:nth-child(4){
+	left: 75vw;
+	animation-delay: 6s;
+	
+}.circle li:nth-child(5){
+	left: 90vw;
+	animation-delay: 8s;
+	
+}
+
+
+/* 定义动画 */
+@keyframes square{
+	0%{
+		transform: scale(0) rotateY(0deg);
+		opacity: 1;
+		
+	}
+	100%{
+		transform: scale(5) rotateY(1000deg);
+		opacity: 0;
+		
+	}
+}
+@keyframes circle{
+	0%{
+		transform: scale(0) rotateY(0deg);
+		opacity: 1;
+		bottom: 0;
+		border-radius: 0;
+	}
+	100%{
+		transform: scale(5) rotateY(1000deg);
+		opacity: 0;
+		bottom: 90vh;
+		border-radius: 50%;
+	}
+}

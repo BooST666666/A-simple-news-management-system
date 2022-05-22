@@ -1,0 +1,199 @@
+body{
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding:0;
+}
+a {
+    font-size: 14px;	
+	text-decoration: none;	
+	color: #000000;
+}
+.bgimg{
+    height:350px;
+    width: 100%;
+   background: url(../image/header.png) center/cover;
+}
+.bgimg a img{
+    margin-top: 40px;
+    margin-left: 1420px;
+    width: 30px;
+    background: rgb(33, 70,236);
+    cursor: pointer;
+    animation: mymove 10s linear infinite;
+   
+    
+}
+
+.content{
+    width:980px;
+    margin:0 auto;
+    margin-top: -50px;
+    border-radius: 10px;
+    background-color: #fff;
+    border:solid 1px #ddd;
+}
+
+.content .con_left{
+    width: 230px;
+    float:left;
+}
+.content .con_right{
+    width:680px;
+    position: relative;
+    float: right;
+    margin:0 auto;
+    margin:10px;
+    padding:15px;
+    border-radius: 10px;
+    border: solid 1px #ddd;
+    
+}
+.content .con_left .con_left1{
+    width:200px;
+    margin:10px;
+    padding:15px;
+    border-radius: 10px;
+    border: solid 1px #ddd;
+}
+.content .con_header{
+    font-size: 18px;
+    color: rgb(0, 204, 255);
+    border-bottom: solid 2px rgb(119, 0, 255);
+    padding-bottom: 5px;
+}
+.title{
+    height:20px;
+    line-height:20px;
+    padding-left:20px;
+}
+ul{
+    padding-left: 20px;
+    margin:8px 0;
+}
+.table1{
+
+   position: relative;
+    width:100%;
+    padding: 10px 0;
+}
+.table1 td,.table1 th{
+	text-align:left;
+    vertical-align: middle;
+	border-bottom: solid 1px #000;
+}
+.clear{ clear:both}
+
+.content .con_left .con_left1 a{
+    font-size: 14px;	
+	text-decoration: none;	
+	color: #000000;
+
+}
+.content .con_left .con_left1 a:hover{
+    transform: 0.5s;
+    color:lightcoral
+
+}
+.content .con_right form .btn_grey{
+    background-color: green;
+    border-radius: 10px;/* 弧形按钮 */
+    width: 80px;
+    height: 30px;
+    border: none;
+    color: #fff;
+	/* 字体加粗 */
+	font-size: bold;
+	/* 字符间距 */
+	letter-spacing: 4px;
+	
+	/* 移动到按钮,设定鼠标的形状为一只伸出食指的手 */
+	cursor: pointer;
+    transform: 0.5s;
+}
+.content .con_right form .btn_grey:hover{
+    background-color: lightgreen;
+   
+}
+.content .con_right form .btn_back{
+    background-color: red;
+    border-radius: 10px;/* 弧形按钮 */
+    width: 80px;
+    height: 30px;
+    border: none;
+    color: #000;
+	/* 字体加粗 */
+	font-size: bold;
+	/* 字符间距 */
+	letter-spacing: 4px;
+	margin: 35px auto 40px auto;
+	/* 移动到按钮,设定鼠标的形状为一只伸出食指的手 */
+	cursor: pointer;
+    transform: 0.5s;
+}
+.content .con_right form .btn_back:hover{
+    background-color: lightcoral;
+   
+}
+.content .con_right form td{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+
+}
+.con_right form tr td select{
+    background-color: lightblue;
+    border-radius: 10px;/* 弧形按钮 */
+    
+    height: 30px;
+    border: none;
+    color: #fff;
+	/* 字体加粗 */
+	font-size: bold;
+	/* 字符间距 */
+	letter-spacing: 4px;
+	
+	cursor: pointer;
+    transform: 0.5s;
+}
+.con_right table a{
+    color: black;
+}
+
+.con_right table a:hover{
+    color: red;
+}
+
+.width {
+    width: 1224px;
+    margin: 0 auto;
+}
+.f_word {
+    text-align: center;
+    width: 800px;
+    float: left;
+    padding-left: 200px;
+    line-height: 30px;
+    color: #000;
+    font-size: 14px;
+    padding-top: 100px;
+}
+.f_word p{
+    margin: 10px;
+}
+.f_word img{
+    width: 100px;
+    height: 100px;
+}
+select{
+    position: relative;
+    margin-top: 5px;
+}
+
+
+td{
+    position: relative;
+}
+@keyframes mymove {
+    from {background: rgb(33, 70,236);}
+    to {background: rgb(255, 0, 0);}
+  }
+  
